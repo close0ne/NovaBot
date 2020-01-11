@@ -1,0 +1,11 @@
+{
+  "name": "NovaBot",
+  "version": "1.0.0",
+  "description": "NovaBot",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "googleapis": "^46.0.0"
+  }
+}
