@@ -1,12 +1,6 @@
 const {google} = require('googleapis');
 const sheets = google.sheets('v4');
-const request = {
-    spreadsheetId: '1k3JDS85f8IHA8XqFLJYw2-8EWsNkXWOn0q1GDuMLIn4',
-    range: 'B8:E', 
-    valueRenderOption: 'FORMATTED_VALUE', 
-    dateTimeRenderOption: 'SERIAL_NUMBER',  
-    auth: '',
-};
+const request = require('./auth/req.json');
 
 sheets.spreadsheets.values.get(request, function(err, response) {
     if (err) {
