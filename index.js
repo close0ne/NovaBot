@@ -23,11 +23,11 @@ client.on('message', message => {
         const pending = balance[2];
         const paid = balance[3];
         if (typeof(balance[3]) == "undefined") {
-          message.channel.send(`Meno: ${meno}\nPanding: ${pending}`);
+          message.channel.send(`Meno: ${meno}\nPending: ${pending}`);
         } else if (typeof(balance[2]) == "undefined" || balance[2] == "") {
           message.channel.send(`Meno: ${meno}\nPaid: ${paid}`);
         } else {
-          message.channel.send(`Meno: ${meno}\nPaid: ${paid}\nPanding: ${pending}`);
+          message.channel.send(`Meno: ${meno}\nPaid: ${paid}\nPending: ${pending}`);
         };
       }
 
